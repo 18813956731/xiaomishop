@@ -3,6 +3,7 @@
 		<image class="logo" src="/static/logo.png"></image>
 		<view class="text-area">
 			<text class="title">{{title}}</text>
+			<text class="title">{{name}}</text>
 		</view>
 	</view>
 </template>
@@ -11,7 +12,8 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				name:"我的购物车"
 			}
 		},
 		onLoad() {
