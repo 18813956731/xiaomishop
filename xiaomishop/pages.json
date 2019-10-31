@@ -17,14 +17,14 @@
 								"float": "left",
 								"fontSize": "20px",
 								"fontSrc": "/static/icon/iconfont.ttf",
-								"text": "\ue702"
+								"text": "\ue67a" 
 							},
 							{
 								"color": "#555555",
 								"float": "right",
 								"fontSize": "20px",
 								"fontSrc": "/static/icon/iconfont.ttf",
-								"text": "\ue65c"
+								"text": "\ue661"
 							}
 						]
 					}
@@ -49,7 +49,7 @@
 								"float": "right",
 								"fontSize": "20px",
 								"fontSrc": "/static/icon/iconfont.ttf",
-								"text": "\ue65c"
+								"text": "\ue661"
 							}
 						]
 					}
@@ -78,29 +78,29 @@
 	},
 	"tabBar": {
 	    "color": "#7A7E83",
-	    "selectedColor": "#007AFF",
+	    "selectedColor": "#E29360",
 	    "borderStyle": "black",
 	    "backgroundColor": "#F8F8F8",
 	    "list": [{
 	            "pagePath": "pages/index/index",
-	            "iconPath": "static/component.png",
-	            "selectedIconPath": "static/componentHL.png",
+	            "iconPath": "static/tabbar/index.png",
+	            "selectedIconPath": "static/tabbar/indexSelected.png",
 	            "text": "首页"
 	        },
 	        {
 	            "pagePath": "pages/classify/index",
-	            "iconPath": "static/api.png",
-	            "selectedIconPath": "static/apiHL.png",
+	            "iconPath": "static/tabbar/class.png",
+	            "selectedIconPath": "static/tabbar/classSelected.png",
 	            "text": "分类"
 	        }, {
 	            "pagePath": "pages/shopping/index",
-	            "iconPath": "static/extui.png",
-	            "selectedIconPath": "static/extuiHL.png",
+	            "iconPath": "static/tabbar/cart.png",
+	            "selectedIconPath": "static/tabbar/cartSelected.png",
 	            "text": "购物车"
 	        }, {
 	            "pagePath": "pages/mine/index",
-	            "iconPath": "static/template.png",
-	            "selectedIconPath": "static/templateHL.png",
+	            "iconPath": "static/tabbar/my.png",
+	            "selectedIconPath": "static/tabbar/mySelected.png",
 	            "text": "我的"
 	        }
 	    ]
