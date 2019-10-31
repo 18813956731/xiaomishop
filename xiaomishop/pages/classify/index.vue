@@ -5,6 +5,8 @@
 			<text class="title">{{title}}</text>
 		</view>
 		<text>123</text>
+		<text>332</text>
+		<text>334</text>
 	</view>
 </template>
 
