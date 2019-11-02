@@ -8,7 +8,7 @@
 						"searchInput": {
 							"align": "left",
 							"backgroundColor": "#fff",
-							"disabled":"true",
+							"disabled": "true",
 							"placeholder": "搜索"
 						},
 						//按钮配置
@@ -17,7 +17,7 @@
 								"float": "left",
 								"fontSize": "20px",
 								"fontSrc": "/static/icon/iconfont.ttf",
-								"text": "\ue67a" 
+								"text": "\ue67a"
 							},
 							{
 								"color": "#555555",
@@ -29,7 +29,7 @@
 						]
 					}
 				}
-			
+
 			}
 		},
 		{
@@ -39,22 +39,21 @@
 					"titleNView": {
 						"searchInput": {
 							"align": "left",
-							"disabled":"true",
+							"disabled": "true",
 							"backgroundColor": "#fff",
 							"placeholder": "搜索"
 						},
 						//按钮配置
-							"buttons": [{
-								"color": "#555555",
-								"float": "right",
-								"fontSize": "20px",
-								"fontSrc": "/static/icon/iconfont.ttf",
-								"text": "\ue661"
-							}
-						]
+						"buttons": [{
+							"color": "#555555",
+							"float": "right",
+							"fontSize": "20px",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"text": "\ue661"
+						}]
 					}
 				}
-			
+
 			}
 		},
 		{
@@ -65,72 +64,51 @@
 		},
 		{
 			"path": "pages/mine/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
+			"style":{
+				"navigationBarBackgroundColor":"rgba(255,0,0,0.1)",
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/mine/setup",
+			"style":{
+				"navigationBarTitleText":"设置",
+				"navigationBarBackgroundColor":"white"
 			}
 		}
-	    ,{
-            "path" : "pages/classify/list/list",
-            "style" : {
-					"app-plus": {
-						"titleNView": {
-							"titleText":"列表",
-							"backgroundColor":"white",
-							//按钮配置
-							"buttons": [
-								// {
-								// 	"color": "#555555",
-								// 	"float": "left",
-								// 	"fontSize": "20px",
-								// 	"fontSrc": "/static/icon/iconfont.ttf",
-								// 	"text": "\ue601" 
-								// },
-								{
-									"color": "#555555",
-									"float": "right",
-									"fontSize": "20px",
-									"fontSrc": "/static/icon/iconfont.ttf",
-									"text": "\ue60c"
-								}
-							]
-						}
-					}
-			}
-        }
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
 	"tabBar": {
-	    "color": "#7A7E83",
-	    "selectedColor": "#E29360",
-	    "borderStyle": "black",
-	    "backgroundColor": "#F8F8F8",
-	    "list": [{
-	            "pagePath": "pages/index/index",
-	            "iconPath": "static/tabbar/index.png",
-	            "selectedIconPath": "static/tabbar/indexSelected.png",
-	            "text": "首页"
-	        },
-	        {
-	            "pagePath": "pages/classify/index",
-	            "iconPath": "static/tabbar/class.png",
-	            "selectedIconPath": "static/tabbar/classSelected.png",
-	            "text": "分类"
-	        }, {
-	            "pagePath": "pages/shopping/index",
-	            "iconPath": "static/tabbar/cart.png",
-	            "selectedIconPath": "static/tabbar/cartSelected.png",
-	            "text": "购物车"
-	        }, {
-	            "pagePath": "pages/mine/index",
-	            "iconPath": "static/tabbar/my.png",
-	            "selectedIconPath": "static/tabbar/mySelected.png",
-	            "text": "我的"
-	        }
-	    ]
+		"color": "#7A7E83",
+		"selectedColor": "#E29360",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/index.png",
+				"selectedIconPath": "static/tabbar/indexSelected.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/classify/index",
+				"iconPath": "static/tabbar/class.png",
+				"selectedIconPath": "static/tabbar/classSelected.png",
+				"text": "分类"
+			}, {
+				"pagePath": "pages/shopping/index",
+				"iconPath": "static/tabbar/cart.png",
+				"selectedIconPath": "static/tabbar/cartSelected.png",
+				"text": "购物车"
+			}, {
+				"pagePath": "pages/mine/index",
+				"iconPath": "static/tabbar/my.png",
+				"selectedIconPath": "static/tabbar/mySelected.png",
+				"text": "我的"
+			}
+		]
 	}
 }

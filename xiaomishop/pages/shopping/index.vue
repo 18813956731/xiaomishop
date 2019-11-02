@@ -1,28 +1,26 @@
 <template>
 	<view class="content">
-		<heads></heads>
-		<goodslist></goodslist>
+		<image class="logo" src="/static/logo.png"></image>
+		<view class="text-area">
+			<text class="title">{{title}}</text>
+			<text class="title">{{name}}</text>
+		</view>
 	</view>
 </template>
 
 <script>
-	import heads from "../../components/shopping/heads.vue"
-	import goodslist from "../../components/shopping/goodslist.vue"
 	export default {
 		data() {
 			return {
+				title: 'Hello',
 				name:"我的购物车"
 			}
-		},
-		components:{
-			heads,
-			goodslist
 		},
 		onLoad() {
 
 		},
 		methods: {
-			
+
 		}
 	}
 </script>
