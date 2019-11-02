@@ -7,7 +7,7 @@
 			<view class="name">
 				<img src="/static/images/demo/demo6.jpg" mode="widthFix" />
 			</view>
-			<text class="text">测试a昵称</text>
+			<text class="text">测试昵称</text>
 			<view class="integral">
 				<span class="iconfont">&#xe7eb;</span>
 				<text>会员积分1.99</text>
