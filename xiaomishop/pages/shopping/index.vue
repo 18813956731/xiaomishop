@@ -1,14 +1,29 @@
 <template>
 	<view class="content">
+<<<<<<< HEAD
 		<image class="logo" src="/static/logo.png"></image>
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 			<text class="title">{{name}}</text>
 		</view>
+=======
+		<goodslist ></goodslist>
+		<view class="goods-carts">
+			<goodsnav  />
+		</view>
+		<recommend></recommend>
+>>>>>>> 田野
 	</view>
 </template>
 
 <script>
+<<<<<<< HEAD
+=======
+	import goodslist from "@/components/shopping/goodslist.vue"
+	import goodsnav from "@/components/shopping/goodsnav.vue"
+	import recommend from "@/components/shopping/recommend.vue"
+	
+>>>>>>> 田野
 	export default {
 		data() {
 			return {
@@ -16,8 +31,17 @@
 				name:"我的购物车"
 			}
 		},
+<<<<<<< HEAD
+=======
+		components:{
+			goodslist,
+			goodsnav,
+			recommend
+		},
+>>>>>>> 田野
 		onLoad() {
-
+		
+		
 		},
 		methods: {
 
@@ -25,30 +49,12 @@
 	}
 </script>
 
-<style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+<style scoped>
+.goods-carts {
+		width: 100%;
+		position: fixed;
+		bottom: 117rpx;
 	}
 
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+	
 </style>
