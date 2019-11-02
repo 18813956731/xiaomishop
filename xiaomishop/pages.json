@@ -78,6 +78,29 @@
 				"navigationBarTitleText":"设置",
 				"navigationBarBackgroundColor":"white"
 			}
+		},{
+			"path": "pages/classify/list/list",
+			"style":{
+				"app-plus": {
+					"titleNView": {
+						"searchInput": {
+							"align": "left",
+							"disabled": "true",
+							"backgroundColor": "#fff",
+							"placeholder": "搜索"
+						},
+						//按钮配置
+						"buttons": [{
+							"color": "#555555",
+							"float": "right",
+							"fontSize": "20px",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"text": "\ue661"
+						}]
+					}
+				}
+
+			}
 		}
 	],
 	"globalStyle": {

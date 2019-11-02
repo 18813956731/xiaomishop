@@ -13,7 +13,7 @@
 					</view>
 				</view>
 			</view>
-			<view class="items">筛选</view>
+			<view class="items">筛选1</view>
 		</view>
 		<view class="conter">
 			<!-- 商品 -->
