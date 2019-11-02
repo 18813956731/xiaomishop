@@ -16,7 +16,7 @@
 		data() {
 			return {
 				title: 'Hello',
-				name:"我的购物车"
+				name:"我1的购物车"
 			}
 		},
 
