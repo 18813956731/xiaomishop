@@ -31,7 +31,7 @@
 			<span class="iconfont icon-you"></span>
 		</view>
 		<view class="btn bt" @click="rivacy">
-			<text>隐私政策</text>
+			<text>隐私a政策w</text>
 			<span class="iconfont icon-you"></span>
 		</view>
 		<view class="footer">
