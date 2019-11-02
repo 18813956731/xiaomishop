@@ -69,7 +69,35 @@
 				"navigationBarTitleText": "uni-app"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/classify/list/list",
+            "style" : {
+					"app-plus": {
+						"titleNView": {
+							"titleText":"列表",
+							"backgroundColor":"white",
+							//按钮配置
+							"buttons": [
+								// {
+								// 	"color": "#555555",
+								// 	"float": "left",
+								// 	"fontSize": "20px",
+								// 	"fontSrc": "/static/icon/iconfont.ttf",
+								// 	"text": "\ue601" 
+								// },
+								{
+									"color": "#555555",
+									"float": "right",
+									"fontSize": "20px",
+									"fontSrc": "/static/icon/iconfont.ttf",
+									"text": "\ue60c"
+								}
+							]
+						}
+					}
+			}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
