@@ -28,18 +28,11 @@
 		onLoad() {
 		
 		},
-		methods: {
-
-		}
-	}
+		methods: {}
+}
 </script>
 
-<style scoped>
-.goods-carts {
-		width: 100%;
-		position: fixed;
-		bottom: 117rpx;
-	}
+<style scoped="scoped">
 
 	
 </style>
