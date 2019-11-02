@@ -16,7 +16,7 @@
 											<view class='name'>华为matax210</view>
 											<view class='lx'>
 												<view>
-													火焰红 64G 标配
+													火焰红 64G 标配1
 												</view>
 												<view>
 													<!-- <icon type="#CCCCCC" class="iconfont">&#xe65d;</icon> -->
