@@ -3,17 +3,17 @@
 		<!-- 头部 -->
 		<view class="hreder">
 			<img class="image" src="/static/images/bg.jpg" mode="widthFix" />
-			<span class="iconfont font">&#xe67a;</span>
+			<span class="iconfont font" @click="notice">&#xe67a;</span>
 			<view class="name">
 				<img src="/static/images/demo/demo6.jpg" mode="widthFix" />
 			</view>
-			<text class="text">测试昵称</text>
+			<text class="text">厨师</text>
 			<view class="integral">
 				<span class="iconfont">&#xe7eb;</span>
 				<text>会员积分1.99</text>
 			</view>
 		</view>
-		<view class="order">
+		<view class="order" @click="requer">
 			我的订单
 			<span class="rigth">全部订单<span class="iconfont icon-you"></span></span>
 		</view>
@@ -95,13 +95,19 @@
 		methods: {
 			set: function() {
 				uni.navigateTo({
-					url:"setup"
+					url:"../setup/setup?id=1"
 				})
 			},
+			notice() {
+				console.log("顶部导航")
+			},
+			requer(){
+				uni.navigateTo({
+					url:"../myorder/myorder?id=1"
+				})
+			}
 		},
-		onNavigationBarButtonTap(e) {
-			console.log("顶部导航")
-		}
+		
 	}
 </script>
 
