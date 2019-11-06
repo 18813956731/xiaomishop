@@ -2,7 +2,9 @@
 	<view id="content">
 		<view class="scroll-Left">
 			<scroll-view scroll-y="false" class="scroll-y" :style="{height:phoneHeight+'px'}">
-				<view v-for="(item,index) in 20" class="classification" @click="tab(index)">分类{{index+1}}</view>
+				<view v-for="(item,index) in 10">
+					<view class="fenlei" :class="tabcss==index?'tabcolor':''" :key="index" @click="tabs(index)">分类{{index+1}}</view>
+				</view>
 			</scroll-view>
 		</view>
 		<view class="commodity-Right">
@@ -15,7 +17,6 @@
 				</ul>
 			</scroll-view>
 		</view>
-		<!-- <image src="../../static/images/demo/list/1.jpg"></image> -->
 	</view>
 </template>
 
@@ -23,10 +24,11 @@
 	export default {
 		data() {
 			return {
+				tabcss:0,
 				classif:0,
-				title: 'Hello',
 				"phoneHeight": 0,
 				"phoneHeights": 0,
+				"classification":'',
 				"list_img": [
 					"../../static/images/demo/list/1.jpg",
 					"../../static/images/demo/list/2.jpg",
@@ -47,19 +49,24 @@
 					// console.log(res.windowHeight)
 				}
 			});
-			// uni.request({
-			// 	url: 'http://ceshi3.dishait.cn/api/index_category/data',
-			// 	success(res) {
-			// 		console.log(res);
-			// 	}
-			// })
+			uni.request({
+				url: 'http://ceshi3.dishait.cn/api/index_category/data',
+				success(res) {
+					// 分类
+					_this.classification=res.data.data.category
+					console.log(res.data.data);
+				}
+			})
 		},
 		methods: {
-			tab:function(e) {
-				this.classif=e
-				console.log(e)
+			// 切换样式
+			tabs:function(e){
+				let _this=this
+				_this.tabcss=e;
+				_this.classif=e;
 			},
-			Jump(e){
+			// 跳转列表页
+			Jump:function(e){
 				uni.navigateTo({
 					url:"list/list"
 				})
@@ -94,10 +101,18 @@
 	}
 
 	/* tab切换 */
-	.classification {
-		padding: 25rpx;
-		border-bottom: solid 1rpx;
-		border-right: solid 1rpx;
+	.fenlei{
+		font-size: 30rpx;
+		padding: 25rpx 0rpx;
+		text-align: center;
+		border-bottom: solid 1rpx #DDDDDD;
+		border-right: solid 1rpx #DDDDDD;
+		width: 180rpx;
+		border-left: #FFFFFF 7rpx solid;
+	}
+	.tabcolor{
+		color: #FD964F;
+		border-left: #FD964F 7rpx solid;
 	}
 
 	/* 右边商品 */
